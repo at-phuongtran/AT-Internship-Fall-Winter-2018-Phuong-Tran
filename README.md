@@ -1,7 +1,7 @@
 # AT Internship Fall Winter 2018
 
-#name
+# Name
 Phuong Tran T. X.
 
-#team 
+# Team
 PHP
