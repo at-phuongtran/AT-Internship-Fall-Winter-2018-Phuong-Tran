@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+/* ------------- HEADER PAGE ------------- */
+.header-page::after {
+  height: 160px;
+  width: 100%;
+  content: '';
+  display: block;
+}
+.header-top {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid var(--element-gray);
+}
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header-name {
+  /*float: left;*/
+  display: block;
+  margin: 15px;
+}
+.name-company {
+  padding: 20px 0; 
+  font-size: 30px;
+}
+.name {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--element-black);
+}
+.header-contact {
+  padding: 30px 0;  
+}
+.phone-number {
+  text-decoration: none;
+  color: var(--element-blue);
+}
+.header-bottom {
+  width: 100%;
+  height: 60px;
+}
+.contact-img {
+  display: block;
+}
+.contact-phone {
+  padding: 10px 10px;
+}
+/* ------------- MENU ------------- */
+.menu {
+  height: 60px;
+}
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.menu-item {
+  height: 60px;
+  border-right: 1px solid var(--element-gray);
+  padding: 10px;
+}
+.menu-item:last-child {
+  border-right: 0;
+}
+.menu-link {
+  display: block;
+  color: var(--element-black);
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu-link:hover{
+  color: var(--element-blue);
+}
+.menu-info-list {
+  height: 60px;
+  line-height: 60px;
+  list-style-type: none;
+}
+.menu-info-item {
+  padding: 5px;
+}
+.section-banner {
+  background-image: url(images/banner.png);
+  height: 160px;
+  margin-bottom: 70px;
+  width: 100%;
+}
+.breadcrumb-list {
+  line-height: 160px;
+}
+.breadcrumb-item {
+  display: inline-block;
+}
+.breadcrumb-link, .breadcrumb-link-path {
+  font-size: 12px;
+  display: inline-block;
+  color: var(--element-sea);
+  text-transform: uppercase;
+  font-weight: normal;
+  text-decoration: none;
+
+}
+.breadcrumb-item::after {
+  content: '/';
+  display: inline-block;
+  padding: 0 17px;
+}
+.breadcrumb-item:last-child::after {
+  content: '';
+}
+/* ------------- MAIN PAGE ------------- */
+/* ------------- SIDEBAR ------------- */
+.main-page::after {
+ content: '';
+ display: block;
+ clear: both;
+}
+.sidebar-left {
+  width: 295px;
+}
+.health-category {
+  border: 1px solid var(--element-gray);
+}
+.health-category .health-category-list {
+  list-style-type: none;
+}
+.health-category .health-title {
+  background-color: var(--element-gray);
+  height: 50px;
+  padding: 20px;
+  font-size: 12px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.fa-minus {
+  font-size: 10px;
+}
+.sub-health-item .health-link {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--element-black);
+}
+.sub-health-list {
+  list-style-type: disc;
+  padding: 10px;
+}
+.health-category .sub-health-list .sub-health-item {
+  margin: 25px 20px;
+}
+.form-sidebar {
+  margin-top: 40px;
+  border: 1px solid var(--element-gray);
+  background-color: var(--element-gray);
+  width: 100%;
+}
+.form-title {
+  font-family: 'Times New Roman';
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--element-gray);
+  height: 50px;
+  padding: 15px 0 20px 15px;
+  position: relative;
+  color: var(--element-black);
+  font-weight: bold;
+}
+.form-title::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  width: 65px;
+  height: 2px;
+  color: var(--element-black);
+}
+.form-group {
+  margin: 15px 20px;
+  text-align: center;
+}
+.form-input {
+  height: 40px;
+  width: 100%;
+}
+.btn-group {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.btn-success {
+  background-color: var(--btn-submit);
+  padding: 14px 43px;
+  font-family: 'Times New Roman';
+  border: none;
+  font-size: 14px;
+  color: var(--element-gray);
+  text-transform: uppercase;
+}
+/* ------------- MAIN PAGE ------------- */
+/* ------------- MAIN RIGHT ------------- */
+.main-content-right {
+  padding-left: 20px;
+  width: calc(100% - 295px);
+}
+.service-list {
+  list-style-type: none;
+}
+.service-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.service-item {
+  max-width: calc(100%/3);
+}
+.service-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+.figure-content {
+  border:1px solid var(--element-gray);
+  margin: 0 20px 20px 0;
+}
+.figure-link {
+  display: block;
+  height: 182px; 
+}
+.service-image {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 25px;
+}
+.service-detail {
+  padding: 0 20px 20px 25px;
+}
+.service-title{
+  padding: 0 0 25px 0;
+  text-transform: uppercase;
+}
+.service-title a {
+  text-decoration: none;
+  color: var(--element-black);
+}
+/* ------------- FOOTER PAGE ------------- */
+.footer-page {
+  margin-top: 30px;
+  background: var(--element-blue);
+  width: 100%;
+}
+.footer-top {
+  border-bottom: 1px solid var(--element-blue);
+}
+.footer-info-item {
+  width: calc(100% / 3);
+}
+.footer-info-item-title {
+  margin: 30px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--element-white);
+  text-transform: uppercase;
+}
+.sub-info-item {
+  padding: 0 15px 10px 10px;
+  position: relative;
+}
+.sub-info-item::before {
+  position: absolute;
+  margin-top: 6px;
+  left: 1px;
+  font-family: "FontAwesome";
+  color: var(--element-white);
+  font-style: normal;
+  font-size: 5px;
+  content: "\f111";
+}
+.footer-sub-link {
+  color: var(--element-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+}
+.social {
+  position: relative;
+  padding: 5px 10px 13px 30px;
+}
+.social::before {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  content: url(images/icon-ft-facebook.png);
+}
+.social-gg::before {
+  content: url(images/icon-ft-google-plus.png);
+  }
+.social-yt::before {
+  content: url(images/icon-ft-youtube.png);
+}
+.footer-bottom .clear-fix {
+  padding: 50px 0 20px 0;
+}
+.copyright,.design-by {
+  font-size: 12px;
+  color: var(--element-white);
+  text-transform: uppercase;
+}

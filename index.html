@@ -3,71 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Exercise</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="utilities.css">
+  <link rel="stylesheet" type="text/css" href="exercise.css">
 </head>
 <body>
   <header class="header-page">
-    <div class="header-top">
+    <div class="header-top pull-left">
       <div class="container">
-        <div class="header-logo">
-          <a href="#">
-            <img src="images/logo.png" alt="logo image">
-          </a>
-          <div class="header-name">
-            <h1 class="name-comany">
-              <a href="#">Specialized Clinic</a>
-            </h1>
-            <p>Physlotherapy - Rehabilitation</p>
+        <div class="clear-fix">
+          <div class="header-logo pull-left">
+            <a class="header-name pull-left" href="#">
+              <img src="images/logo.png" alt="logo image">
+            </a>
+            <div class="header-company pull-left">
+              <h1 class="name-company">
+                <a class="name" href="#">Specialized Clinic</a>
+              </h1>
+              <p>Physlotherapy - Rehabilitation</p>
+            </div>
           </div>
-        </div>
-        <div class="header-contact">
-          <i class="fa fa-phone-square"></i>
-          <p>Question for the doctor? <a href="#">05113941 977</a></p>
+          <div class="header-contact pull-right">
+            <img class="contact-img pull-left" src="images/icon-phone.png" alt="phone">
+            <p class="contact-phone pull-right">Question for the doctor? <a class="phone-number" href="#">05113941 977</a></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
+    <div class="header-bottom pull-left">
       <div class="container">
-        <nav class="menu">
-            <ul class="menu-list">
-              <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">About Us</a></li>
-              <li class="active"><a class="menu-link" href="#">Health Services</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Regular Medicine</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Set Calendar</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Consult &amp; Contact</a></li>
+        <nav class="menu pull-left">
+            <ul class="menu-list pull-left">
+              <li class="menu-item pull-left"><a class="menu-link" href="#">Home</a></li>
+              <li class="menu-item pull-left"><a class="menu-link" href="#">About Us</a></li>
+              <li class="menu-item pull-left"><a class="menu-link" href="#">Health Services</a></li>
+              <li class="menu-item pull-left"><a class="menu-link" href="#">Regular Medicine</a></li>
+              <li class="menu-item pull-left"><a class="menu-link" href="#">Set Calendar</a></li>
+              <li class="menu-item pull-left"><a class="menu-link" href="#">Consult &amp; Contact</a></li>
             </ul>
         </nav>
-      <ul class="menu-info-list">
-        <li class="menu-info-item"><a href="#"><i class="icon icon-header icon-facebook"></i></a></li>
-        <li class="menu-info-item"><a href="#"><i class="icon icon-header icon-google"></i></a></li>
-        <li class="menu-info-item"><a href="#"><i class="icon icon-header icon-youtube"></i></a></li>
-      </ul>
+        <ul class="menu-info-list pull-right">
+          <li class="menu-info-item pull-left"><a href="#"><img src="images//icon-facebook.png" alt="facebook"></a></li>
+          <li class="menu-info-item pull-left"><a href="#"><img src="images/icon-google-plus.png" alt="gg plus"></a></li>
+          <li class="menu-info-item pull-left"><a href="#"><img src="images/icon-youtube.png" alt="youtobe"></a></li>
+        </ul>
       </div>
     </div>
   </header>
   <main>
     <section class="section-banner">
-        <img src="images/banner.png" alt="banner image">
-        <div class="container">
-          <ul class="breadcrumb-list">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="active"><h2>Heath service</h2></li>
-          </ul>
-        </div>
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Home</a></li>
+          <li class="breadcrumb-item"><h2 class="breadcrumb-link-path">Heath service</h2></li>
+        </ul>
+      </div>
     </section>
     <div class="main-page">
       <div class="container">
-        <aside class="sidebar-left">
+        <aside class="sidebar-left pull-left">
           <div class="health-category">
             <ul class="health-category-list">
               <li class="health-item"> 
-                <h3>Adults<i class="icon-minus"></i></h3>
+                <h3 class="health-title">Adults<i class="fa fa-minus"></i></h3>
                 <ul class="sub-health-list">
                   <li class="sub-health-item">
                     <a class="health-link" href="#">Neck-shoulder-hand pain</a>
                   </li>
                   <li class="sub-health-item" href="#">
-                    <a class="health-link">Spinal pain</a>
+                    <a class="health-link" href="#">Spinal pain</a>
                   </li>
                   <li class="sub-health-item">
                     <a class="health-link" href="#">Disc herniation</a>
@@ -93,7 +97,7 @@
                 </ul>
               </li>
               <li class="health-item">
-                <h3>Children<i class="icon-minus"></i></h3>
+                <h3 class="health-title">Children<i class="icon-minus"></i></h3>
                 <ul class="sub-health-list">
                   <li class="sub-health-item">
                     <a class="health-link" href="#">Diseases of the muscles</a>
@@ -101,140 +105,136 @@
                   <li class="sub-health-item">
                     <a class="health-link" href="#">Perlpheral neuropathy</a>
                   </li>
-                  <li class="sub-health-item">
-                    <a class="health-link" href="#">Sequelae of stroke</a>
-                  </li>
-                  <li class="sub-health-item">
-                    <a class="health-link" href="#">Traumatic sequelae</a>
-                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="form-sidebar">
-            <h3>Book Schedule</h3>
+            <h3 class="form-title">Book Schedule</h3>
             <form action="" method="post">
               <div class="form-group">
-                <input class="form-control" type="text" name="name" placeholder="Full Name">
+                <input class="form-input" type="text" name="name" placeholder="Full Name">
               </div>
               <div class="form-group">
-                <input class="form-control" type="text" name="address" placeholder="Address">
+                <input class="form-input" type="text" name="address" placeholder="Address">
               </div>
               <div class="form-group">
-                <input class="form-control" type="number" name="phone" placeholder="Phone number">
+                <input class="form-input" type="number" name="phone" placeholder="Phone number">
               </div>
               <div class="form-group">
-                <input class="form-control" type="date" name="time" placeholder="Time">
+                <input class="form-input" type="text" name="time" placeholder="Time">
               </div>
-              <button class="btn-submit" type="submit">Send</button>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success">Send</button>
+              </div>
             </form>
           </div>
         </aside>
-        <div class="main-content-right">
+        <div class="main-content-right pull-right">
           <ul class="service-list">
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image1.jpg" alt="image1">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item1.png" alt="image1">
                   </a>
-                  <figcaption>
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image2.jpg" alt="image2">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item2.png" alt="image2">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image3.jpg" alt="image3">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item3.png" alt="image3">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image4.jpg" alt="image4">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item4.png" alt="image4">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image5.jpg" alt="image5">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item5.png" alt="image5">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Slow say</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Slow say</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image6.jpg" alt="image6">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item6.png" alt="image6">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Slow say</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Slow say</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image7.jpg" alt="image7">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item7.png" alt="image6">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Slow say</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Slow say</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image8.jpg" alt="image8">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item8.png" alt="image1">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
               </figure>
             </li>
-            <li class="service-item">
+            <li class="service-item pull-left">
               <figure class="figure-content">
-                  <a href="#">
-                    <img class="service-image" src="images/image9.jpg" alt="image9">
+                  <a class="figure-link" href="#">
+                    <img class="service-image" src="images/item9.png" alt="image1">
                   </a>
-                  <figcaption class="figure-content">
-                    <h3 class="service-tiile"><a href="#">Neck shoulder pain</a></h3>
+                  <figcaption class="service-detail">
+                    <h3 class="service-title"><a href="#">Neck shoulder pain</a></h3>
                     <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   </figcaption>
                   <a class="service-link" href="#"><i class="icon-arrow-right"></i></a>
@@ -249,28 +249,28 @@
     <div class="footer-top">
       <div class="container">
         <ul class="footer-info-list">
-          <li class="footer-info-item">
+          <li class="footer-info-item pull-left">
               <h3 class="footer-info-item-title">About us</h3>
               <ul class="sub-info-list"> 
-                <li class="sub-info-item"><a href="#">General introduction</a></li>
-                <li class="sub-info-item"><a href="#">Human</a></li>
-                <li class="sub-info-item"><a href="#">Facilities and Facilities</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">General introduction</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">Human</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">Facilities and Facilities</a></li>
               </ul>
           </li>
-          <li>
+          <li class="footer-info-item pull-left">
               <h3 class="footer-info-item-title">Support</h3>
               <ul class="sub-info-list">
-                <li class="sub-info-item"><a href="#">Health counseling</a></li>
-                <li class="sub-info-item"><a href="#">Regular medicine</a></li>
-                <li class="sub-info-item"><a href="#">Schedule appointments</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">Health counseling</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">Regular medicine</a></li>
+                <li class="sub-info-item"><a class="footer-sub-link" href="#">Schedule appointments</a></li>
               </ul>
           </li>
-          <li>
+          <li class="footer-info-item pull-left">
               <h3 class="footer-info-item-title">Social connection</h3>
               <ul class="sub-info-list"> 
-                <li class="sub-info-item social"><a href="#"><i class="icon icon-facebook">Facebook</i></a></li>
-                <li class="sub-info-item social"><a href="#"><i class="icon icon-facebook">Google+</i></a></li>
-                <li class="sub-info-item social"><a href="#"><i class="icon icon-youtube">Youtube</i></a></li>
+                <li class="sub-info-item social social-fb"><a class="footer-sub-link" href="#"><i class="icon icon-facebook">Facebook</i></a></li>
+                <li class="sub-info-item social social-gg"><a class="footer-sub-link" href="#"><i class="icon icon-facebook">Google+</i></a></li>
+                <li class="sub-info-item social social-yt"><a class="footer-sub-link" href="#"><i class="icon icon-youtube">Youtube</i></a></li>
               </ul>
             </li>
         </ul>
@@ -278,8 +278,10 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-          <p class="copyright">&copy; 2018 - Copyright of Specialized Clinic</p>
-          <p class="footer-bottom-right">Design by <a href="#">DD.Com</a></p>
+        <div class="clear-fix">
+          <p class="copyright pull-left">&copy; 2018 - Copyright of Specialized Clinic</p>
+          <p class="design-by pull-right">Design by <a href="#">DD.Com</a></p>
+        </div>
       </div>
     </div>
   </footer>
