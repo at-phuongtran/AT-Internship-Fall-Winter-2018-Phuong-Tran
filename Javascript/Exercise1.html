@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 1 Javascript</title>
+</head>
+<body>
+  <section>
+    <h2>Knowledge round-up</h2>
+    <h3>1. What are the differences between a variable that is: `null`, `undefined`?</h3>
+    <li><b>Undefined</b> means a variable has been declared but has not yet been assigned a value.Undefined is a type itself(undefined).</li>
+    <li><b>NULl</b> is an assignment value.It can be assigned to a variable a representation of no value.NULL is an objects</li>
+    <h3>2. What is `use strict`? what are the advantages and disadvantages to using it?</h3>
+    <p>`use strict`; Defines that Javascript code should be executed in "strict mode".</p>
+    <ol>
+      <b>Advantages</b>
+      <li>Use strict mode in all programs.It hepls to write cleaner code, like preventing you from using undeclared variable.</li>
+      <li>Strict mode makes it easier to write "secure" Javascript.</li>
+      <li>Stict mode changes previously accepted "bad syntax" into real errors, throw errors.</li>
+      <b>Dissadvantages</b>
+      <li>With strict mode, you can not, for example, use undeclared variable.</li>
+      <li>The arguments of a function is not allowed</li>
+      <li>Report of the tasks that not allowed to exec</li>
+      <li>Cannot use a variable was declaration in eval</li>
+    </ol>
+    <h3>3. What are the differences between `==` and `===`? Write an example for each case (if any)?</h3>
+    <ul>
+      <li><b>`==`</b> Comparing the value. VD: true == 1; (true)
+      "2" == 2;  (true)</li>
+      <li><b>`===`</b> This means both the type and the value comparing have to be the same. VD: true === 1 (false); "2" === 2  (false); 2===2 (true);</li>
+    </ul>
+    <h3>4. What is different between declaration: `var`, `const` and `let`?</h3>
+    <ul>
+      <li><b>var</b> use for declares a variable. It can be used in both ES5 and ES6. 'var' - creates a variable whose scope is accessed through the function that contains it.</li>
+      <li><b>const</b> is used to declare a constant - an unchanged value during the run.</li>
+      <li><b>let</b> creates a variable that is only accessible in the block that surrounds it</li>
+    </ul>
+    <h3>5. What are values in the `FALSE` grourp.</h3>
+    <ul>
+      <li>false — boolean false</li>
+      <li>0 — number zero</li>
+      <li>“” — empty string</li>
+      <li>null</li>
+      <li>undefined</li>
+      <li>NaN — Not A Number</li>
+    </ul>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Playground</h2>
+      <div class="exercise">
+        <div class="exercise1">
+          <h4>1. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h4>
+          <p class="anwser">
+            <span>Input: a = 5, b = 5 => Output:</span>
+            <span id="ex1"></span>
+          </p>
+        </div>
+        <div class="exercise2">
+          <h4>2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</h4>
+          <p class="anwser">
+            <span>Input: a = 22 => Output:</span>
+            <span id="ex2"></span>
+          </p>
+        </div>
+        <div class="exercise3">
+          <h4>3. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 3.</h4>
+          <p class="anwser">
+            <span>Input: 1234567890* => Output:</span>
+            <span id="ex3"></span>
+          </p>
+        </div>
+        <div class="exercise4">
+          <h4>4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.</h4>
+          <p class="anwser">
+            <span>Input: 1234567890* => Output:</span>
+            <span id="ex4"></span>
+          </p>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <script type="text/javascript" src="Exercise1.js"></script>
+</body>
+</html>
